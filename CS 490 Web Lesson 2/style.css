@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#nav-bar {
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 30px;
+  position: absolute;
+  right: 10px;
+}
+#nav-bar li {
+  display: inline-block;
+  padding: 5px;
+  vertical-align: middle;
+}
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav-bar a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.nav-bar-opacity {
+  opacity: 0.7;
+}
+
+#menu-icon {
+  background-image: url("https://ssl.gstatic.com/gb/images/i2_2ec824b0.png");
+  width: 30px;
+  height: 30px;
+  background-position: -132px -38px;
+  background-size: 528px 68px;
+}
+
+#menu-icon:hover {
+  opacity: 1;
+}
+
+#sign-in {
+  padding: 8px 11px;
+  background-color: #4285f4;
+  border-radius: 2px;
+}
+
+#sign-in-text {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+.main-content {
+  position: relative;
+  width: 450px;
+  height: 250px;
+  margin: 0 auto;
+  top: 25vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.main-content img {
+  width: 272px;
+  height: 92px;
+}
+
+#search-bar {
+  position: relative;
+  flex-basis: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 1px;
+  border: solid 1px #DDD;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+}
+
+#search-bar:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+input {
+  position: relative;
+  width: 400px;
+  height: 100%;
+  left: 10px;
+  font-size: 20px;
+}
+
+input:focus {
+  outline-style: none;
+}
+
+#speech-link img {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: auto;
+  z-index: 1;
+  bottom: 4px;
+  left: 388px;
+}
+
+.buttons {
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  width: 160px;
+  height: 45px;
+  background-color: rgb(240, 240, 240);
+  margin: 20px 5px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 3px;
+  padding: 8px 16px;
+}
+p {
+  opacity: 0.5;
+}
+.buttons button:hover p {
+  opacity: 1;
+}
+.buttons button:hover {
+  border: solid 1px #BBB;
+}
+footer {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+}
+.bottom-nav {
+  display: flex;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EEE;
+  opacity: 0.5;
+  border-top: solid 1px #CCC;
+}
+footer li {
+  display: inline;
+  margin: 0 20px;
+  font-size: 14px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+.ul-left {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.ul-right {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+#demobox {
+  background-color: #cfc ;
+  padding: 10px ;
+  border: 1px solid green ;
+  height: 70px;
+  width: 70px;
+  hspace:"30";
+  vspace:"30";
+  align-content: center;
+}
+#demobox1 {
+  background-color: red ;
+  padding: 10px ;
+  border: 1px solid red ;
+  height: 70px;
+  width: 70px;
+  hspace:"30";
+  vspace:"30";
+  align-content: center;
+}
+#demobox2 {
+  background-color: blue;
+  padding: 10px;
+  border: 1px solid blue;
+  height: 70px;
+  width: 70px;
+  hspace: "30";
+  vspace: "30";
+  align-self: center;
+}
+#demobox3 {
+  background-color: purple ;
+  padding: 10px ;
+  border: 1px solid purple ;
+  height: 70px;
+  width: 70px;
+  hspace:"30";
+  vspace:"30";
+  align-self: center;
+}
+
+#demobox4 {
+  background-color: black ;
+  padding: 10px ;
+  border: 1px solid black ;
+  height: 70px;
+  width: 70px;
+  hspace:"30";
+  vspace:"30";
+  align-self: center;
+}
+#demobox5 {
+  background-color: orange ;
+  padding: 10px ;
+  border: 1px solid orange ;
+  height: 70px;
+  width: 70px;
+  hspace:"30";
+  vspace:"30";
+  align-self: center;
+}
+#demobox6 {
+  background-color: gray ;
+  padding: 10px ;
+  border: 1px solid gray;
+  height: 70px;
+  width: 70px;
+  hspace:"30";
+  vspace:"30";
+  align-self: center;
+}
+
+#demobox7 {
+  background-color: turquoise ;
+  padding: 10px ;
+  border: 1px solid turquoise ;
+  height: 70px;
+  width: 70px;
+  hspace:"30";
+  vspace:"30";
+  align-self: center;
+}
+#demobox8 {
+  background-color: coral ;
+  padding: 10px ;
+  border: 1px solid coral ;
+  height: 70px;
+  width: 70px;
+  hspace:"30";
+  vspace:"30";
+  align-self: center;
+}
+#demobox9 {
+  background-color: firebrick ;
+  padding: 10px ;
+  border: 1px solid firebrick ;
+  height: 70px;
+  width: 70px;
+  hspace:"30";
+  vspace:"30";
+  align-self: center;
+}
+
+
+                     .grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+}
