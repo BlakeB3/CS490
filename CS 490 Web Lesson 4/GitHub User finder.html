@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>GitHub User Search</h1>
+<!-- button that user presses to initiate prompt -->
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<!-- id where the information will go -->
+<p id="demo"></p>
+
+<!-- javascript to get and parse the data -->
+<script>
+    function loadDoc() {
+        // prompt user for a username
+        var username = prompt("Please enter a GitHub username", "<name here>");
+        //create url with input from user
+        var url = "https://api.github.com/users/" + username ;
+        //send request to the server
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var myObj = JSON.parse(this.responseText);
+                document.getElementById("demo").innerHTML = '<img src="' + myObj.avatar_url +'">' + "ID: " + myObj.id + " Username: " + myObj.login + " URL: "+ myObj.html_url;
+            }
+        };
+        xhttp.open("GET", url , true);
+        xhttp.send();
+    }
+</script>
+
+</body>
+</html>
