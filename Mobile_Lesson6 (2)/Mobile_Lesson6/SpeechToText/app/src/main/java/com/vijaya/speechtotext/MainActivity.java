@@ -117,6 +117,10 @@ public class MainActivity extends AppCompatActivity {
                                         tts.speak("what is your name", TextToSpeech.QUEUE_FLUSH, null, null);
                                     }
 
+                                    if (resultString2.equals("thank you my medical assistant thank-you my medical assistant thank U my medical assistant thank you medical assistant thankyou my medical assistant ")){
+                                        tts.speak("Thank you too, Blake. Take Care", TextToSpeech.QUEUE_FLUSH, null, null);
+                                    }
+
                                     if (resultString2.equals("my name is Blake my name is blayke ")){
                                         tts.speak("ok Blake, what can I do for you.", TextToSpeech.QUEUE_FLUSH, null, null);
                                         nameTv = MainActivity.this.findViewById(R.id.textView3);
