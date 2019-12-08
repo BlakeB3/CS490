@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+</head>
+
+
+<body>
+
+<h1>Rock Paper Scissors</h1>
+<script>
+    // prompt the user for input, get their choice.
+    var userOption = prompt("What do you choose, rock, paper or scissors?");
+
+    // generate random variable for the computer's choice.
+    var compOption = Math.random();
+    if (compOption < 0.34) {
+        compOption = "rock";
+    } else if(compOption <= 0.67) {
+        compOption = "paper";
+    } else {
+        compOption = "scissors";
+    }
+
+    // compare the player's and computer's choices and print out message whether they won or not.
+    var compareChoices = function(choice1,choice2) {
+
+        if (choice1 === choice2) {
+
+            //if same choice, draw
+            return "You made the same selection as the computer. Draw!" ;
+        }
+
+        //possibility 1
+        else if (choice1 === "rock") {
+
+            if (choice2 === "scissors") {
+                return "<br>" + "Computer chose <b>scissors</b>. Rock beats scissors! You won!";
+            }
+            else {
+                return "<br>" + "Computer chose <b>paper</b>. Paper covers rock. Sorry, you lost. Try again!";
+            }
+        }
+
+        //possibility 2
+        else if (choice1 === "paper") {
+
+            if (choice2 === "rock") {
+                return "<br>" + " The computer chose <b>rock</b>. Paper covers rock. You won!";
+            }
+            else {
+                return "<br>" + "Computer goes with <b>scissors</b>. Scissors cut paper. Sorry, you lost. Try again!";
+            }
+
+        }
+
+        //possibility 3
+        else if (choice1 === "scissors") {
+
+            if (choice2 === "rock") {
+                return  "<br>" + "Computer went with <b>rock</b>. Rock beats scissors! Sorry you lost. Try again!";
+            }
+            else {
+                return "<br>" + "Computer decided to choose <b>paper</b>. Scissors cut paper! You won!" ;
+            }
+        }
+
+
+    }
+
+    // Confirm to the user their choice.
+    document.write("Your pick: " + "<b>" + userOption + "</b>"  + "<br>");
+
+    //Call function to compare and write the outcome of the game.
+    document.write(compareChoices(userOption,compOption));
+
+    document.write( "<br>" + "<br>" + "Thanks for playing!");
+
+</script>
+
+
+
+
+</body>
+</html>
